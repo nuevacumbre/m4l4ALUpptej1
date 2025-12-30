@@ -28,11 +28,16 @@ $900 × 1.19 = $1.071 ✓
 graph TD
     A[index.html] --> B[style.css]
     A --> C[script.js]
-    B --> D[Responsive Design]
-    C --> E[calcularPrecioConIVA()]
-    E --> F[Validaciones]
-    E --> G[Retorno preciso]
-    F --> H[UI Feedback]
+    B --> D["🎨 Responsive Design"]
+    C --> E["⭐ calcularPrecioConIVA()"]
+    E --> F["✅ Validaciones"]
+    E --> G["📈 Retorno preciso"]
+    F --> H["🎯 UI Feedback"]
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style E fill:#fff3e0
 ```
 
 ```
