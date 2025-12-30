@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Práctico - Fx con IVA y Descuento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧮 Calculadora de Precios</h1>
+        <p class="subtitle">Ejercicio Práctico Lección 4 - Funciones</p>
+
+        <div class="input-group">
+            <label for="monto">💰 Monto Inicial (CLP):</label>
+            <input type="number" id="monto" placeholder="Ej: 1000" min="0" step="100">
+        </div>
+
+        <div class="input-group">
+            <label for="descuento">📉 Descuento (%):</label>
+            <input type="number" id="descuento" placeholder="Ej: 10" min="0" max="100" step="0.1">
+        </div>
+
+        <button onclick="calcularPrecio()">🔢 Calcular Precio Final</button>
+
+        <div id="resultado" class="result" style="display: none;">
+            <h3>✅ Resultado del cálculo:</h3>
+            <div class="precio-final" id="precioFinal">$<span>0</span></div>
+            <div class="detalle" id="detalleCalculo"></div>
+        </div>
+
+        <div class="codigo">
+            <strong>// FUNCIÓN PRINCIPAL - Copia este código:</strong><br><br>
+            <code>function calcularPrecioConIVA(monto, descuento) {<br>
+            &nbsp;&nbsp;let montoConDescuento = monto - (monto * descuento / 100);<br>
+            &nbsp;&nbsp;let precioFinal = montoConDescuento * 1.19;<br>
+            &nbsp;&nbsp;return precioFinal;<br>
+            }</code><br><br>
+            <small>// Uso: calcularPrecioConIVA(1000, 10) → $1071</small>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
